@@ -1,4 +1,4 @@
----
----
-
-@import "base";
+@use "minima" with (
+  $grey-color-light: color.adjust(minima.$grey-color, $lightness: 40%),
+  $grey-color-dark: color.adjust(minima.$grey-color, $lightness: -25%)
+);
