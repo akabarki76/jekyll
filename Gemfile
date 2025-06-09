@@ -8,7 +8,8 @@ gem "rake", "~> 13.0"
 group :development do
   gem "launchy", "~> 2.3"
   gem "pry"
-
+gem "logger"
+gem "sassc", "~> 2.0"  # Older Sass compiler without these warnings
   gem "pry-byebug" unless RUBY_ENGINE == "jruby"
 end
 
